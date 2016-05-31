@@ -1,5 +1,5 @@
 #Swift dominará o mundo! Por que usar?
-Por que usar a linguagem mais bacana de todos os tempos, na visão de uma pessoa imparcial 😁
+Porque usar a linguagem mais bacana de todos os tempos, na visão de uma pessoa imparcial 😁
 
 ![Swift]
 (https://9to5mac.files.wordpress.com/2015/12/swift-16-9.jpg)
@@ -25,7 +25,7 @@ Por que usar a linguagem mais bacana de todos os tempos, na visão de uma pessoa
 
 ---
 
-###Há 1 ano atrás quando me perguntavam sobre swift...
+###Há 1 ano atrás quando me perguntavam sobre Swift...
 
 ---
 
@@ -33,11 +33,11 @@ Por que usar a linguagem mais bacana de todos os tempos, na visão de uma pessoa
 
 ---
 
-*“Ahhh tá muito cedo ainda, a linguagem parece promissora mas eu ainda não trocaria."*
+*“Ahhh tá muito cedo ainda, a linguagem parece promissora, mas eu ainda não trocaria."*
 
 ---
 
-*“Está muito instavel, acho melhor aguardar"*
+*“Está muito instável, acho melhor aguardar"*
 
 ---
 
@@ -55,9 +55,9 @@ Brincadeiras a parte...
 
 ###Swift está... 
 - Bem mais maduro 
-- Virou open source
+- Virou *open source*
 - Comunidade aderiu de forma bem rápida. 
-- O "time de desenvolvimento" está ouvindo muito a comunidade para que a linguagem evolua baseado no que realmente importa, o usuário (noixxx)!
+- O "time de desenvolvimento" está ouvindo muito a comunidade para que a linguagem evolua baseada no que realmente importa, o usuário (noixxx)!
 
 ---
 
@@ -73,7 +73,7 @@ Nesta talk, abordo pontos que julgo evoluções importantíssimas em vários que
 
 ---
 
-#Joinhas para o swift 👍👍👍
+#Joinhas para o Swift 👍👍👍
 
 ---
 
@@ -101,8 +101,8 @@ guard let safe = optional else {
 ```
 ---
 
-###Capture lists:
-Referências ao objeto **self** dentro de blocks/clousure sempre foi um assunto confuso. Em objective-c normalmente criava-se um objeto que segurava uma referencia fraca ao **self** e referênciava o mesmo dentro do block.
+###Capture Lists:
+Referências ao objeto **self** dentro de *blocks/closure* sempre foi um assunto confuso. Em Objective-c normalmente criava-se um objeto que segurava uma referência fraca ao **self** e referenciava o mesmo dentro do *block*.
 
 ---
 **Em objective-c...**
@@ -115,13 +115,13 @@ __weak MyObject *weakSelf = self;
 ```
 ---
 
-Em swift, pensando nisso, foram criadas as Capture lists, elas tem a função de ser uma lista de referências que serão passadas para detro do clousure.
+Em Swift, pensando nisso, foram criadas as *Capture Lists*, elas têm a função de ser uma lista de referências que serão passadas para dentro do *closure*.
 
 ---
 
 ###Qual a diferença entre o unowned e weak?
-- **weak** = Não acrescenta +1 (usado para objetos opcionais, que podem ser nil)
-- **unowned** = Não acrescenta +1 (usado para objetos NÃO opcionais, que não podem ser nil)
+- **weak** = Não acrescenta 1 (usado para objetos opcionais, que podem ser nil)
+- **unowned** = Não acrescenta 1 (usado para objetos NÃO opcionais, que não podem ser nil)
 
 ---
 
@@ -154,7 +154,7 @@ selector: #selector(AppDelegate.meuMetodo)
 ---
 
 ###O que ganhamos com isso? 
-Consegue-se checar se o selector é valido, em tempo de compilação!
+Consegue-se checar se o *selector* é válido, em tempo de compilação!
 
 ---
 
@@ -167,11 +167,11 @@ O Swift ainda não valida o número de argumentos esperados para aquele seletor
 
 ---
 
-Mentira, saudades nada. No swift, como vcs devem saber, temos decoradores de métodos/funções/propriedades que discriminam qual o nível de acesso dos mesmos, sendo eles:
+Mentira, saudades nada. No Swift, como vcs devem saber, temos decoradores de métodos/funções/propriedades que discriminam qual o nível de acesso aos mesmos, sendo eles:
 
 ---
 
-- **internal**: visivel no namespace do projeto
+- **internal**: visível no namespace do projeto
 - **private**: só na classe
 - **public**: \o/
           
@@ -183,12 +183,12 @@ Além da função de separar variáveis de constantes, o **let** e o **var** nos
 ---
 
 ###willSet
-Executa um clousure quando uma propridade será setada...
+Executa um *closure* quando uma propridade será setada...
 
 ---
 
 ###didSet
-Executa um clousure quando uma propridade foi setada...
+Executa um *closure* quando uma propridade foi setada...
 
 ---
 
@@ -208,7 +208,7 @@ var totalSteps: Int = 0 {
 ---
 
 ###Enums
-Enums ficaram extremamente interessantes, dentre seus novos atributos, está a definição de funções dentor de um enum...
+Enums ficaram extremamente interessantes. Dentre seus novos atributos, está a definição de funções em seu corpo...
 
 ---
 
@@ -249,7 +249,7 @@ enum HTTPStatus {
 ---
 
 ### Error handling 👍
-Uma das features mais importantes do swift, nada mais são do especificações de ErrorType. Definidos como enums...
+Uma das *features* mais importantes do Swift, nada mais é do que especificações de ErrorType. Definidos como enums...
 
 ---
 
@@ -335,9 +335,9 @@ A Apple sugere que o uso dos erros para todo e qualquer tipo de validação...
 
 #Pontos de atenção ⚠️
 - iOS <= 7
-- Dynamic Libs (Parece besta, mas da uma googlada numa lib em swift que da suporte para iOS 7) 😀
-- Evite o bridging para Objective-c, isso é muito custoso!
-- Ignore o quanto pudero uso de objetos "NS", use-os em caso de vida ou morte a maioria dos tipos estão convertidos para Swift (CollectionType, ErrorType, String, Int ...)
+- *Dynamic Libs* (Parece besta, mas dá uma *googlada* numa lib em swift que dá suporte para iOS 7) 😀
+- Evite o *bridging* para Objective-c, isso é muito custoso!
+- Ignore o quanto puder o uso de objetos "NS", use-os em caso de vida ou morte, a maioria dos tipos estão convertidos para Swift (CollectionType, ErrorType, String, Int ...)
 
 ---
 
