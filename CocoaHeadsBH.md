@@ -352,3 +352,7 @@ A Apple sugere que o uso dos erros para todo e qualquer tipo de validação...
 #Mancadas do Swift 👎
 - ARC x Garbage Colector
 - Ainda não gosto da forma que nós temos que fazer classes abstratas em Swift, me pareceu algo obsoleto no meio do tanto que se fala em linguagens funcionais/ reativas
+
+---
+
+#Obrigado :)
